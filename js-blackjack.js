@@ -85,11 +85,8 @@ class Player{
         return total;
     }
     showhand(hidden = false){
-        for(let i=0;i<this._hand.length ; i++)
-            output +=" card "+ card_value(this._hand[i])
         if (hidden)
             return Array(this._hand.length).fill(127136)
-        let count = this._hand.length
         return this._hand.slice()
     }
 }
@@ -113,9 +110,9 @@ class Game{
     start(){
         let repeat=2
         while(repeat--)
-        for (let i=0;i<this._players.length;i++){
-            this._players[i].hit(this._gamedeck)
-        }
+            for (let i=0;i<this._players.length;i++){
+                this._players[i].hit(this._gamedeck)
+            }
         this._players[0].showhand()
         this._players[1].showhand()
         return this;
