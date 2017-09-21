@@ -1,0 +1,42 @@
+* {
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.decks{
+    margin:20px;
+    border: 1px black solid;
+    width : 900px;
+    height: 270px;
+    text-align: center;
+}
+.hands{
+    margin: 10px;
+    width: 800px;
+    height:200px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+.cards{
+    font-size: 10em;
+    font-weight: lighter;
+}
+hr {
+    width: 50%;
+
+}
+#turn0,#turn1{
+    width: 100%;
+    height: 100%;
+    outline: 1px solid lightsalmon;
+}
+.overlay {
+    background-color: rgba(255,165,0,0.7);;
+    position: absolute;
+    z-index:100;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family : Verdana;
+    width : 200px;
+    text-align: center;
+    color : white;
+}
